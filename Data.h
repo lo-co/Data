@@ -18,23 +18,26 @@
 #include <boost/any.hpp>
 #include <boost/date_time.hpp>
 
-class Data {
-public:
+namespace reusable {
 
-    Data();
-    Data(const Data& orig);
-    
-    void set_time();
-    
-    template <class T> 
-    T get_data();
-    
-    virtual ~Data();
-private:
-    boost::any data;
-    boost::posix_time::ptime now;
+    class Data {
+    public:
 
-};
+        Data();
+        Data(const Data& orig);
+
+        void set_time();
+
+        template <class T>
+        T get_data();
+
+        virtual ~Data();
+    private:
+        boost::any data;
+        boost::posix_time::ptime now;
+
+    };
+}
 
 #endif /* DATA_H */
 

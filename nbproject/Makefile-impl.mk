@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=AlicatCommunication
+PROJECTNAME=Data
 
 # Active Configuration
 DEFAULTCONF=Debug
